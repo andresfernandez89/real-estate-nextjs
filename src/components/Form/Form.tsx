@@ -1,5 +1,3 @@
 export function Form() {
-    return (
-        <p>Form</p>
-    )
+  return <p>Form</p>;
 }

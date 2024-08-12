@@ -1,8 +1,5 @@
-"use client"
+"use client";
 
 export function Header() {
-
-    return (
-        <p>Header</p>
-    )
+  return <p>Header</p>;
 }

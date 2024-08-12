@@ -1,9 +1,5 @@
-
-"use client"
+"use client";
 
 export function Location() {
-
-    return (
-        <p>Location</p>
-    )
+  return <p>Location</p>;
 }

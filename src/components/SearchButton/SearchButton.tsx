@@ -1,6 +1,3 @@
-
 export function SearchButton() {
-    return (
-        <p>Search button</p>
-    )
+  return <p>Search button</p>;
 }

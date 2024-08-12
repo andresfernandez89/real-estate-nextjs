@@ -1,8 +1,5 @@
-"use client"
+"use client";
 
 export function Properties() {
-
-    return (
-        <p>Properties</p>
-    )
+  return <p>Properties</p>;
 }
