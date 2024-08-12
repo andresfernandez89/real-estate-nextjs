@@ -24,7 +24,7 @@ jobs:
         run: npm ci
 
       - name: Run Prettier
-        run: npx prettier --write --ignore-unknown
+        run: npx prettier --write . --ignore-unknown
 
       - name: Commit changes and Push if any
         uses: stefanzweifel/git-auto-commit-action@v5
