@@ -2,7 +2,7 @@ name: Pipeline
 
 on:
   push:
-    branches: -main
+    branches: [main]
 
 jobs:
   deploy:
@@ -20,7 +20,7 @@ jobs:
         with:
           node-version: 20
 
-      - name: Set up Node.js
+      - name: Install dependencies
         run: npm ci
 
       - name: Run Prettier
@@ -30,5 +30,6 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: format code with Prettier"
+
       - name: Build
         run: npm run build
