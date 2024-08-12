@@ -22,3 +22,13 @@ jobs:
 
       - name: Set up Node.js
         run: npm ci
+
+      - name: Run Prettier
+        run: npx prettier --write --ignore-unknown
+
+      - name: Commit changes and Push if any
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: format code with Prettier"
+      - name: Build
+        run: npm run build
