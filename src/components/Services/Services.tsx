@@ -1,7 +1,5 @@
-"use client"
+"use client";
 
 export function Services() {
-    return (
-        <p>Services</p>
-    )
+  return <p>Services</p>;
 }

@@ -1,5 +1,3 @@
 export function Banner() {
-    return (
-        <p>Banner</p>
-    )
+  return <p>Banner</p>;
 }

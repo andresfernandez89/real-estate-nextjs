@@ -1,7 +1,5 @@
-import { MarkerHouseProps } from './MarkerHouse.types'
+import { MarkerHouseProps } from "./MarkerHouse.types";
 
 export function MarkerHouse(props: MarkerHouseProps) {
-    return (
-        <p>Marker House</p>
-    )
+  return <p>Marker House</p>;
 }

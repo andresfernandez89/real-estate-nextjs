@@ -1,6 +1,3 @@
 export function Property() {
-
-    return (
-        <p>Property</p>
-    )
+  return <p>Property</p>;
 }
