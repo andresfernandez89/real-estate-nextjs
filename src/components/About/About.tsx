@@ -1,5 +1,3 @@
 export function About() {
-    return (
-        <p>About</p>
-    )
+  return <p>About</p>;
 }

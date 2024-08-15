@@ -1,5 +1,3 @@
 export function Slider() {
-    return (
-        <p>Slide </p>
-    )
+  return <p>Slide </p>;
 }

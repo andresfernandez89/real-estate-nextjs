@@ -1,8 +1,5 @@
-import { useEffect, useState } from "react"
-import { dataHeader } from "../Header/Header.data"
+import { useEffect, useState } from "react";
+import { dataHeader } from "../Header/Header.data";
 export function Navbar() {
-
-    return (
-        <p>Navbar</p>
-    )
+  return <p>Navbar</p>;
 }
