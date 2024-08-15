@@ -15,7 +15,8 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v4
 
-      - uses: actions/cache@v4
+      - name: Cache Node.js dependencies and Next.js build
+        uses: actions/cache@v4
         with:
           path: |
             ~/.npm
