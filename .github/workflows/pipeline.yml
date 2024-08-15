@@ -33,7 +33,7 @@ jobs:
           node-version: 20
 
       - name: Install dependencies
-        run: npm install --no-audit --no-fund --no-optional
+        run: npm ci --no-audit --no-fund --omit=optional
 
       - name: Run Prettier
         run: npx prettier --write . --ignore-unknown
