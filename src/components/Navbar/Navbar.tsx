@@ -73,6 +73,7 @@ export function Navbar(props: NavbarProps) {
     </AnimatePresence>
   );
 }
+
 const animationNavbar = {
   initial: {
     y: -20,
