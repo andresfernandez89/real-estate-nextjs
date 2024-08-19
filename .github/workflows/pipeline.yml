@@ -21,7 +21,19 @@ jobs:
           node-version: 20
           cache: "npm"
 
+      - name: "Cache Node.js dependencies and Next.js build"
+        id: cache-nodemodules-nextjs
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.npm
+            ${{ github.workspace }}/.next/cache
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx') }}
+          restore-keys: |
+            ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
+
       - name: Install dependencies
+        if: steps.cache-nodemodules-nextjs.outputs.cache-hit != 'true'
         run: npm ci --no-audit --no-fund --omit=optional
 
       - name: Run Prettier
