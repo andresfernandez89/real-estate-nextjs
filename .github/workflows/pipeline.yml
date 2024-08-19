@@ -15,25 +15,11 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v4
 
-      - name: Cache Node.js dependencies and Next.js build
-        uses: actions/cache@v4
-        with:
-          path: |
-            ~/.npm
-            ${{ github.workspace }}/.next/cache
-          # Generate a new cache whenever packages or source files change.
-          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx') }}
-          # If source files changed but packages didn't, rebuild from a prior cache.
-          restore-keys: |
-            ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
-
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
-
-      - name: Clean npm cache
-        run: npm cache clean --force
+          cache: "npm"
 
       - name: Install dependencies
         run: npm ci --no-audit --no-fund --omit=optional
