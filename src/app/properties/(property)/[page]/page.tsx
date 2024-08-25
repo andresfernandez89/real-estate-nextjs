@@ -1,4 +1,4 @@
-export const runtime = "edge";
+"use client";
 import { Error404 } from "@/components/Error404";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
@@ -6,6 +6,7 @@ import { dataProperties } from "@/components/Properties/Properties.data";
 import { Property } from "@/components/Property";
 import { TransitionPage } from "@/components/TransitionPage";
 import { useParams } from "next/navigation";
+export const runtime = "edge";
 
 export default function Page() {
   const router = useParams();
