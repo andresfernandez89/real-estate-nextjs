@@ -4,23 +4,18 @@ export const dataFooter = [
     links: [
       {
         id: 1,
-        name: "Artículos",
-        link: "#articles",
+        name: "Viviendas",
+        link: "#houses",
       },
       {
         id: 2,
-        name: "Viviendas",
-        link: "#houses",
+        name: "Venta",
+        link: "#sell",
       },
       {
         id: 3,
         name: "Alquiler",
         link: "#rent",
-      },
-      {
-        id: 4,
-        name: "Venta",
-        link: "#sell",
       },
     ],
   },
@@ -39,13 +34,8 @@ export const dataFooter = [
       },
       {
         id: 3,
-        name: "Localización",
-        link: "#location",
-      },
-      {
-        id: 4,
-        name: "Propiedades",
-        link: "#properties",
+        name: "Blog",
+        link: "#blog",
       },
     ],
   },
@@ -54,8 +44,8 @@ export const dataFooter = [
     links: [
       {
         id: 1,
-        name: "Privacidad",
-        link: "#privacy",
+        name: "Notarios",
+        link: "#notarios",
       },
       {
         id: 2,
@@ -66,11 +56,6 @@ export const dataFooter = [
         id: 3,
         name: "Contacta con nosotros",
         link: "#contact",
-      },
-      {
-        id: 4,
-        name: "Más información",
-        link: "#more-info",
       },
     ],
   },
