@@ -10,6 +10,9 @@ const config: Config = {
     extend: {
       colors: {
         secondary: "#727C73",
+        mainClient: "#850000",
+        secondaryClient: "#eec88a",
+        thirdClient: "#f8fafc",
       },
       backgroundImage: {
         banner: "url('/assets/house-banner.png')",
