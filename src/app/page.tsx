@@ -3,7 +3,6 @@ import { About } from "@/components/About";
 import { Banner } from "@/components/Banner";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
-import { JoinCommunity } from "@/components/JoinCommunity";
 import { Properties } from "@/components/Properties";
 import { Services } from "@/components/Services";
 import { TransitionPage } from "@/components/TransitionPage";
@@ -21,17 +20,16 @@ export default function Home() {
     <>
       <TransitionPage />
       <Header />
-      <main>
+      <main className="mx-auto max-w-screen-xl md:mt-[70px]">
         <Banner />
         <Properties />
-        <div className="mx-auto max-w-6xl">
+        <div className="mx-auto">
           <Services />
           <LocationMap />
           <About />
         </div>
-        <JoinCommunity />
-        <Footer />
       </main>
+      <Footer />
     </>
   );
 }

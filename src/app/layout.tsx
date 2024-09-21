@@ -16,7 +16,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body className={quickSand.className}>{children}</body>
+      <body className={`${quickSand.className} bg-secondaryClient`}>
+        {children}
+      </body>
     </html>
   );
 }
