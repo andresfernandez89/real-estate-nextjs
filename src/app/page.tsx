@@ -20,7 +20,7 @@ export default function Home() {
     <>
       <TransitionPage />
       <Header />
-      <main className="mx-auto mt-[70px] max-w-screen-xl">
+      <main className="mx-auto max-w-screen-xl md:mt-[70px]">
         <Banner />
         <Properties />
         <div className="mx-auto">
