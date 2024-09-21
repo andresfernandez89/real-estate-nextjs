@@ -28,7 +28,7 @@ export function Navbar() {
                 <Link
                   key={item.name}
                   href={item.link}
-                  className="text-thirdClient hover:text-thirdClient rounded-md px-3 py-2 text-sm font-medium transition-colors duration-300 hover:bg-red-700"
+                  className="rounded-md px-3 py-2 text-sm font-medium text-thirdClient transition-colors duration-300 hover:bg-red-700 hover:text-thirdClient"
                 >
                   {item.name}
                 </Link>
@@ -38,7 +38,7 @@ export function Navbar() {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-thirdClient hover:text-thirdClient focus:ring-thirdClient inline-flex items-center justify-center rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-inset"
+              className="inline-flex items-center justify-center rounded-md p-2 text-thirdClient hover:text-thirdClient focus:outline-none focus:ring-2 focus:ring-inset focus:ring-thirdClient"
             >
               {isOpen ? (
                 <LuX className="block h-6 w-6" aria-hidden="true" />
@@ -65,7 +65,7 @@ export function Navbar() {
             <Link
               key={item.name}
               href={item.link}
-              className="text-thirdClient hover:text-thirdClient block rounded-md px-3 py-2 text-base font-medium transition-colors duration-300 hover:bg-red-700"
+              className="block rounded-md px-3 py-2 text-base font-medium text-thirdClient transition-colors duration-300 hover:bg-red-700 hover:text-thirdClient"
             >
               {item.name}
             </Link>
