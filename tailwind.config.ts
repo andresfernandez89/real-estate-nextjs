@@ -11,8 +11,9 @@ const config: Config = {
       colors: {
         secondary: "#727C73",
         mainClient: "#850000",
-        secondaryClient: "#eec88a",
+        secondaryClient: "#ffedd5",
         thirdClient: "#f8fafc",
+        mainBg: "#fffef7",
       },
       backgroundImage: {
         banner: "url('/assets/house-banner.png')",

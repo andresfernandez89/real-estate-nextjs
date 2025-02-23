@@ -1,3 +1,4 @@
+"use client";
 import { icon } from "leaflet";
 import Image from "next/image";
 import { FaMapMarkerAlt } from "react-icons/fa";

@@ -4,16 +4,11 @@ export const dataFooter = [
     links: [
       {
         id: 1,
-        name: "Viviendas",
-        link: "#houses",
-      },
-      {
-        id: 2,
         name: "Venta",
         link: "#sell",
       },
       {
-        id: 3,
+        id: 2,
         name: "Alquiler",
         link: "#rent",
       },
@@ -47,14 +42,10 @@ export const dataFooter = [
         name: "Notarios",
         link: "#notarios",
       },
+
       {
         id: 2,
-        name: "Términos y condiciones",
-        link: "#terms",
-      },
-      {
-        id: 3,
-        name: "Contacta con nosotros",
+        name: "Contactatanos",
         link: "#contact",
       },
     ],
