@@ -1,13 +1,12 @@
 import { getAllProperties } from "@/services/getAllProperties";
 import { Properties } from "../Properties/Properties";
 import { Transition } from "../Transition";
-import { dataProperties } from "./Properties.data";
 
 export async function PropertiesContainer() {
-  const data2 = await getAllProperties();
+  const properties = await getAllProperties();
   return (
     <Transition className="container mx-auto px-4 py-8 md:py-32">
-      <Properties data={dataProperties} data2={data2} />
+      <Properties data={properties} />
       {/* <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
          {dataFilteredHouses.map(
           ({

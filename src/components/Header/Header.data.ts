@@ -13,17 +13,12 @@ export const dataHeader: HeaderData[] = [
   },
   {
     id: 3,
-    name: "Servicios",
-    link: "#services",
+    name: "Propiedades",
+    link: "#propierties",
   },
   {
     id: 4,
-    name: "Localización",
-    link: "#location",
-  },
-  {
-    id: 5,
-    name: "Propiedades",
-    link: "#propierties",
+    name: "Contacto",
+    link: "#contact",
   },
 ];

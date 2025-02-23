@@ -7,13 +7,6 @@ import { Services } from "@/components/Services";
 import { TransitionPage } from "@/components/TransitionPage";
 //import dynamic from "next/dynamic";
 
-/* const LocationMap = dynamic(
-  () => import("../components/Location").then((module) => module.Location),
-  {
-    ssr: false,
-  },
-); */
-
 export default function Home() {
   return (
     <>
@@ -24,7 +17,6 @@ export default function Home() {
         <PropertiesContainer />
         <div className="mx-auto">
           <Services />
-          {/*  <LocationMap /> */}
           <About />
         </div>
       </main>
