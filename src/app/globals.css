@@ -9,12 +9,3 @@ html {
 .swiper-scrollbar-drag {
   background: #727c73;
 }
-
-.leaflet-control-attribution {
-  display: none;
-}
-
-.leaflet-popup-content-wrapper,
-.leaflet-popup-tip {
-  border-radius: 0.5rem;
-}
