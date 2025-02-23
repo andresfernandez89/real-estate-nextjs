@@ -11,7 +11,17 @@ import {
 } from "react-icons/lia";
 import { Transition } from "../Transition";
 
-export function Properties({ data, data2 }: any) {
+type Property = {
+  id: number;
+  location: string;
+  price: number;
+  bedrooms: number;
+  bathroom: number;
+  image: string;
+  meters: number;
+};
+
+export function Properties({ data, data2 }: { data: Property[]; data2: any }) {
   const [counterHouses, setCounterHouses] = useState(8);
   const dataFilteredHouses = data.slice(0, counterHouses);
   const loadMoreHouses = () => setCounterHouses(counterHouses + 4);
