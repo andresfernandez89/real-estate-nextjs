@@ -1,25 +1,15 @@
-"use client";
-
-import { formatPrice } from "@/utils/formatPrice";
-import Image from "next/image";
-import Link from "next/link";
-import { useState } from "react";
-import {
-  LiaBathSolid,
-  LiaBedSolid,
-  LiaRulerCombinedSolid,
-} from "react-icons/lia";
+import { getAllProperties } from "@/services/getAllProperties";
+import { Properties } from "../Properties/Properties";
 import { Transition } from "../Transition";
+import { dataProperties } from "./Properties.data";
 
-export function Properties({ data, data2 }: any) {
-  const [counterHouses, setCounterHouses] = useState(8);
-  const dataFilteredHouses = data.slice(0, counterHouses);
-  const loadMoreHouses = () => setCounterHouses(counterHouses + 4);
-  console.log(data2);
+export async function PropertiesContainer() {
+  const data2 = await getAllProperties();
   return (
     <Transition className="container mx-auto px-4 py-8 md:py-32">
-      <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
-        {dataFilteredHouses.map(
+      <Properties data={dataProperties} data2={data2} />
+      {/* <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
+         {dataFilteredHouses.map(
           ({
             id,
             location,
@@ -69,15 +59,15 @@ export function Properties({ data, data2 }: any) {
         )}
       </div>
       <div className="my-7 text-center">
-        {counterHouses < data.length && (
+        {counterHouses < dataProperties.length && (
           <button
             className="cursor-pointer rounded-xl bg-secondary px-6 py-5 text-white transition-all duration-150 hover:bg-black"
             onClick={loadMoreHouses}
           >
             Ver más viviendas
           </button>
-        )}
-      </div>
+        )} 
+      </div>*/}
     </Transition>
   );
 }

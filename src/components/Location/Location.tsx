@@ -19,8 +19,8 @@ export function Location() {
   };
 
   return (
-    <Transition className="py- px-4 md:px-36 md:py-44">
-      <h4 className="text-center text-secondary" id="location">
+    <Transition className="containermx-auto px-4 py-8 md:py-44">
+      <h4 className="text-center text-secondary md:text-left" id="location">
         Localización
       </h4>
       <h2 className="mx-auto my-4 mb-8 max-w-2xl text-center text-3xl font-semibold">
@@ -30,7 +30,7 @@ export function Location() {
         center={coordinatePoint}
         zoom={6}
         scrollWheelZoom={false}
-        className="h-[700px]"
+        className="z-0 h-[700px]"
       >
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
