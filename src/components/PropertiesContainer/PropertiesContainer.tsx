@@ -1,9 +1,9 @@
-import { getAllProperties } from "@/services/getAllProperties";
+import { getAllPropertiesFeatured } from "@/services/getAllPropertiesFeatured";
 import { Properties } from "../Properties/Properties";
 import { Transition } from "../Transition";
 
 export async function PropertiesContainer() {
-  const properties = await getAllProperties();
+  const properties = await getAllPropertiesFeatured();
   return (
     <Transition className="container mx-auto px-4 py-8 md:py-32">
       <Properties data={properties} />
