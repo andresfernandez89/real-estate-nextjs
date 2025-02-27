@@ -6,8 +6,8 @@ import { Transition } from "../Transition";
 
 export function FloatedSearch() {
   return (
-    <Transition className="absolute bottom-10 left-0 right-0 mx-auto w-[75%] md:-bottom-10">
-      <div className="flex-col justify-between gap-4 rounded-md bg-white px-3 py-4 shadow-light backdrop-blur-sm md:flex md:flex-row">
+    <Transition className="absolute right-0 bottom-10 left-0 mx-auto w-[75%] md:-bottom-10">
+      <div className="shadow-light flex-col justify-between gap-4 rounded-md bg-white px-3 py-4 backdrop-blur-sm md:flex md:flex-row">
         <SearchLocation />
         <SearchProperty />
         <SearchPriceRange />

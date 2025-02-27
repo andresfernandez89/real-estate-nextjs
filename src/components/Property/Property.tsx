@@ -32,16 +32,16 @@ export function Property(props: PropertyProps) {
             className="h-auto w-full rounded-2xl"
             priority
           />
-          <div className="text-main-client mt-4 gap-4 lg:flex">
-            <div className="bg-secondary-client my-1 flex items-center justify-center rounded-lg px-2 py-1">
+          <div className="text-mainClient mt-4 gap-4 lg:flex">
+            <div className="bg-secondaryClient my-1 flex items-center justify-center rounded-lg px-2 py-1">
               <LiaBedSolid />
               <span className="ml-2">{house.bedrooms}</span>
             </div>
-            <div className="bg-secondary-client my-1 flex items-center justify-center rounded-lg px-2 py-1">
+            <div className="bg-secondaryClient my-1 flex items-center justify-center rounded-lg px-2 py-1">
               <LiaBathSolid />
               <span className="ml-2">{house.bathroom}</span>
             </div>
-            <div className="bg-secondary-client my-1 flex items-center justify-center rounded-lg px-2 py-1">
+            <div className="bg-secondaryClient my-1 flex items-center justify-center rounded-lg px-2 py-1">
               <LiaRulerCombinedSolid />
               <span className="ml-2">{house.meters}</span>
             </div>

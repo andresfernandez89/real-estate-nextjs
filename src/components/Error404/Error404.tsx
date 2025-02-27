@@ -13,10 +13,10 @@ export function Error404() {
         alt="Not found"
         width={600}
         height={450}
-        className="rounded-lg shadow-light"
+        className="shadow-light rounded-lg"
       />
       <div className="mt-5 text-center">
-        <Link href="/" className="text-while rounded-lg bg-secondary px-3 py-2">
+        <Link href="/" className="text-while bg-secondary rounded-lg px-3 py-2">
           Volver al Inicio
         </Link>
       </div>

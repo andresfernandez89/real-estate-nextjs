@@ -17,7 +17,7 @@ export function SearchLocation() {
       </div>
       {isOpen ? <GrFormUp /> : <GrFormDown />}
       {isOpen && (
-        <div className="w-[230px} absolute left-0 top-[70px] z-50 rounded-lg bg-white p-4 shadow-light">
+        <div className="w-[230px} shadow-light absolute top-[70px] left-0 z-50 rounded-lg bg-white p-4">
           <p>Centro</p>
           <p>La Perla</p>
           <p>Guemes</p>
