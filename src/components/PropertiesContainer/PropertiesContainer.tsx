@@ -24,7 +24,7 @@ export async function PropertiesContainer() {
               href={`/properties/${id}`}
               className="cursor-pointer rounded-xl shadow-light transition-all duration-300 hover:shadow-xl"
             >
-              <div className="relative -z-[1]">
+              <div className="relative -z-1">
                 <div className="relative">
                   <Image
                     src={`/assets/properties/${image}`}

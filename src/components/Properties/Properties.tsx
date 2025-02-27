@@ -32,9 +32,9 @@ export function Properties({ data }: { data: PropertiesProps }) {
             <Link
               key={reference}
               href={`/properties/${reference}`}
-              className="cursor-pointer rounded-xl shadow-light transition-all duration-300 hover:shadow-xl"
+              className="shadow-light cursor-pointer rounded-xl transition-all duration-300 hover:shadow-xl"
             >
-              <div className="relative -z-[1]">
+              <div className="relative -z-1">
                 <div className="relative">
                   <Image
                     src={`${thumbnail}`}
@@ -50,16 +50,16 @@ export function Properties({ data }: { data: PropertiesProps }) {
                       {shortDescription ? ` - ${shortDescription}` : ""}
                     </p>
                     <p className="font-semibold">{price}</p>
-                    <div className="mt-2 flex-row justify-stretch gap-1 text-mainClient lg:flex">
-                      <div className="my-2 flex flex-grow items-center justify-center rounded-md bg-secondaryClient px-2 py-1">
+                    <div className="text-mainClient mt-2 flex-row justify-stretch gap-1 lg:flex">
+                      <div className="bg-secondaryClient my-2 flex grow items-center justify-center rounded-md px-2 py-1">
                         <LiaBedSolid />
                         <span className="ml-2">{2}</span>
                       </div>
-                      <div className="my-2 flex flex-grow items-center justify-center rounded-md bg-secondaryClient px-2 py-1">
+                      <div className="bg-secondaryClient my-2 flex grow items-center justify-center rounded-md px-2 py-1">
                         <LiaBathSolid />
                         <span className="ml-2">{2}</span>
                       </div>
-                      <div className="my-2 flex flex-grow items-center justify-center rounded-md bg-secondaryClient px-2 py-1">
+                      <div className="bg-secondaryClient my-2 flex grow items-center justify-center rounded-md px-2 py-1">
                         <LiaRulerCombinedSolid />
                         <span className="ml-2">{50}</span>
                       </div>
@@ -74,7 +74,7 @@ export function Properties({ data }: { data: PropertiesProps }) {
       <div className="my-7 text-center">
         {counterHouses < data.length && (
           <button
-            className="cursor-pointer rounded-xl bg-secondary px-6 py-5 text-white transition-all duration-150 hover:bg-black"
+            className="bg-secondary cursor-pointer rounded-xl px-6 py-5 text-white transition-all duration-150 hover:bg-black"
             onClick={loadMoreHouses}
           >
             Ver más viviendas

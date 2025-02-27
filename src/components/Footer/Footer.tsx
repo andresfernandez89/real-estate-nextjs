@@ -9,8 +9,8 @@ import { dataFooter } from "./Footer.data";
 
 export function Footer() {
   return (
-    <div className="mt-8 bg-mainClient px-4 py-8 md:px-36">
-      <div className="grid max-w-screen-xl grid-cols-2 justify-center gap-8 text-white md:grid-cols-[1fr,1fr,1fr,_400px]">
+    <div className="bg-mainClient mt-8 px-4 py-8 md:px-36">
+      <div className="grid max-w-(--breakpoint-xl) grid-cols-2 justify-center gap-8 text-white md:grid-cols-[1fr_1fr_1fr__400px]">
         {dataFooter.map(({ id, links }) => (
           <div key={id}>
             {links.map(({ id, name, link }) => (
