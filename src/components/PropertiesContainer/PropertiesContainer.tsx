@@ -36,16 +36,16 @@ export async function PropertiesContainer() {
                   <div className="px-3 py-5">
                     <p className="text-secondary">{location}</p>
                     <p className="font-semibold">{formatPrice(price)}</p>
-                    <div className="mt-2 flex-row gap-1 text-mainClient lg:flex">
-                      <div className="my-2 flex items-center justify-center rounded-md bg-secondaryClient px-2 py-1">
+                    <div className="mt-2 flex-row gap-1 text-main-client lg:flex">
+                      <div className="my-2 flex items-center justify-center rounded-md bg-secondary-client px-2 py-1">
                         <LiaBedSolid />
                         <span className="ml-2">{bedrooms}</span>
                       </div>
-                      <div className="my-2 flex items-center justify-center rounded-md bg-secondaryClient px-2 py-1">
+                      <div className="my-2 flex items-center justify-center rounded-md bg-secondary-client px-2 py-1">
                         <LiaBathSolid />
                         <span className="ml-2">{bathroom}</span>
                       </div>
-                      <div className="my-2 flex items-center justify-center rounded-md bg-secondaryClient px-2 py-1">
+                      <div className="my-2 flex items-center justify-center rounded-md bg-secondary-client px-2 py-1">
                         <LiaRulerCombinedSolid />
                         <span className="ml-2">{meters}</span>
                       </div>

@@ -1,13 +1,13 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @theme {
   --color-secondary: #727c73;
-  --color-main-client: #850000;
-  --color-secondary-client: #ffedd5;
+  --color-main-client: #531e21;
+  --color-secondary-client: #e4cdb0;
   --color-third-client: #f8fafc;
   --color-main-bg: #fffef7;
 
-  --background-image-banner: url('/assets/house-banner.png');
+  --background-image-banner: url("/assets/house-banner.png");
 
   --shadow-light: 0px 4px 30px rgba(0, 0, 0, 0.08);
 }

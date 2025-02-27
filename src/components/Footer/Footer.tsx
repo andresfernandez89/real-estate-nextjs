@@ -9,7 +9,7 @@ import { dataFooter } from "./Footer.data";
 
 export function Footer() {
   return (
-    <div className="bg-mainClient mt-8 px-4 py-8 md:px-36">
+    <div className="bg-main-client mt-8 px-4 py-8 md:px-36">
       <div className="grid max-w-(--breakpoint-xl) grid-cols-2 justify-center gap-8 text-white md:grid-cols-[1fr_1fr_1fr__400px]">
         {dataFooter.map(({ id, links }) => (
           <div key={id}>

@@ -50,16 +50,16 @@ export function Properties({ data }: { data: PropertiesProps }) {
                       {shortDescription ? ` - ${shortDescription}` : ""}
                     </p>
                     <p className="font-semibold">{price}</p>
-                    <div className="text-mainClient mt-2 flex-row justify-stretch gap-1 lg:flex">
-                      <div className="bg-secondaryClient my-2 flex grow items-center justify-center rounded-md px-2 py-1">
+                    <div className="text-main-client mt-2 flex-row justify-stretch gap-1 lg:flex">
+                      <div className="bg-secondary-client my-2 flex grow items-center justify-center rounded-md px-2 py-1">
                         <LiaBedSolid />
                         <span className="ml-2">{2}</span>
                       </div>
-                      <div className="bg-secondaryClient my-2 flex grow items-center justify-center rounded-md px-2 py-1">
+                      <div className="bg-secondary-client my-2 flex grow items-center justify-center rounded-md px-2 py-1">
                         <LiaBathSolid />
                         <span className="ml-2">{2}</span>
                       </div>
-                      <div className="bg-secondaryClient my-2 flex grow items-center justify-center rounded-md px-2 py-1">
+                      <div className="bg-secondary-client my-2 flex grow items-center justify-center rounded-md px-2 py-1">
                         <LiaRulerCombinedSolid />
                         <span className="ml-2">{50}</span>
                       </div>

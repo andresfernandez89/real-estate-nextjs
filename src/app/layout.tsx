@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Quicksand } from "next/font/google";
+import { Libre_Franklin } from "next/font/google";
 import "./globals.css";
 
-const quickSand = Quicksand({ subsets: ["latin"] });
+const franklin = Libre_Franklin({ subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
   title: "Nizzi Propiedades",
@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body className={`${quickSand.className} bg-mainBg`}>{children}</body>
+      <body className={`${franklin.className} bg-main-bg`}>{children}</body>
     </html>
   );
 }

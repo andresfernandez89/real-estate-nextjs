@@ -9,7 +9,7 @@ export function Navbar() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
-    <nav className="bg-mainClient fixed top-0 right-0 left-0 z-99">
+    <nav className="bg-main-client fixed top-0 right-0 left-0 z-99">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-14 items-center justify-between">
           <div className="shrink-0">
@@ -28,7 +28,7 @@ export function Navbar() {
                 <Link
                   key={item.name}
                   href={item.link}
-                  className="text-mainBg hover:text-mainBg rounded-md px-3 py-2 text-sm font-medium transition-colors duration-300 hover:bg-red-700"
+                  className="text-main-bg hover:text-main-bg rounded-md px-3 py-2 text-sm font-medium transition-colors duration-300 hover:bg-red-700"
                 >
                   {item.name}
                 </Link>
@@ -38,7 +38,7 @@ export function Navbar() {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-mainBg hover:text-mainBg focus:ring-mainBg inline-flex items-center justify-center rounded-md p-2 focus:ring-2 focus:outline-hidden focus:ring-inset"
+              className="text-main-bg hover:text-main-bg focus:ring-main-bg inline-flex items-center justify-center rounded-md p-2 focus:ring-2 focus:outline-hidden focus:ring-inset"
             >
               {isOpen ? (
                 <LuX className="block h-6 w-6" aria-hidden="true" />
@@ -65,7 +65,7 @@ export function Navbar() {
             <Link
               key={item.name}
               href={item.link}
-              className="text-mainBg hover:text-mainBg block rounded-md px-3 py-2 text-base font-medium transition-colors duration-300 hover:bg-red-700"
+              className="text-main-bg hover:text-main-bg block rounded-md px-3 py-2 text-base font-medium transition-colors duration-300 hover:bg-red-700"
             >
               {item.name}
             </Link>
