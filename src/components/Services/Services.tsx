@@ -5,13 +5,13 @@ import { Slider } from "./Slider";
 
 export function Services() {
   return (
-    <Transition className="md:py-46 container mx-auto grid px-4 py-8 md:grid-cols-2 md:gap-28">
+    <Transition className="container mx-auto grid px-4 py-8 md:grid-cols-2 md:gap-28 md:py-46">
       <div className="mb-7 max-w-xl">
-        <h4 className="text-center text-secondary md:text-left">Servicios</h4>
+        <h4 className="text-secondary text-center md:text-left">Servicios</h4>
         <h2 className="my-4 text-center text-3xl font-semibold md:text-left">
           16 años cumpliendo sueños
         </h2>
-        <p className="mb-10 mt-7 text-pretty text-center md:text-left">
+        <p className="mt-7 mb-10 text-center text-pretty md:text-left">
           Somos un equipo familiar y dinámico que desde el año 2008 se dedica a
           la mediación en operaciones inmobiliarias con fuerte especialización
           en las ventas de inmuebles residenciales en Mar del Plata. Ponemos a
