@@ -3,6 +3,7 @@
 @theme {
   --color-secondary: #727c73;
   --color-main-client: #531e21;
+  --color-main-client-opacity: oklch(50% 0.08 20.89 / 0.2);
   --color-secondary-client: #e4cdb0;
   --color-third-client: #f8fafc;
   --color-main-bg: #fffef7;
