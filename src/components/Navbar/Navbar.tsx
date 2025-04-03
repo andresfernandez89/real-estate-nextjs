@@ -28,7 +28,7 @@ export function Navbar() {
                 <Link
                   key={item.name}
                   href={item.link}
-                  className="text-main-bg hover:text-main-bg rounded-md px-3 py-2 text-sm font-medium transition-colors duration-300 hover:bg-red-700"
+                  className="text-main-bg hover:text-main-bg hover:bg-main-client-opacity rounded-md px-3 py-2 text-sm font-medium transition-colors duration-300"
                 >
                   {item.name}
                 </Link>
@@ -65,7 +65,7 @@ export function Navbar() {
             <Link
               key={item.name}
               href={item.link}
-              className="text-main-bg hover:text-main-bg block rounded-md px-3 py-2 text-base font-medium transition-colors duration-300 hover:bg-red-700"
+              className="text-main-bg hover:text-main-bg hover:bg-main-client-opacity block rounded-md px-3 py-2 text-base font-medium transition-colors duration-300"
             >
               {item.name}
             </Link>

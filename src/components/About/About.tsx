@@ -11,10 +11,16 @@ export function About() {
           Más de 16 años con excelente reputación
         </h2>
         <p className="mt-7 text-center text-pretty md:mb-10 md:text-left">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
-          laudantium asperiores deserunt harum quaerat inventore impedit ab quo
-          et, ratione quasi, placeat sed voluptatem adipisci! Sunt odio impedit
-          saepe earum.
+          Desde el año 2008 se dedica a la mediación en operaciones
+          inmobiliarias con fuerte especialización en las ventas de inmuebles
+          residenciales en Mar del Plata. Ponemos a disposición de nuestros
+          clientes el asesoramiento, los profesionales idóneos y las
+          herramientas necesarias para que de manera ágil y segura alcancen el
+          objetivo más conveniente. Contamos con gran alcance y hacemos
+          tasaciones reales dentro del mercado actual. Nuestro servicio se
+          encuentra avalado por el Colegio de Martilleros de Mar del Plata y por
+          una amplia cartera de clientes en la ciudad y el país que pueden dar
+          fé de ésto.
         </p>
       </div>
       <div className="flex items-center justify-center">
