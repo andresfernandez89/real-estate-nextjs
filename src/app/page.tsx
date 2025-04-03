@@ -1,11 +1,11 @@
 import { About } from "@/components/About";
 import { Banner } from "@/components/Banner";
+import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import { OurTeam } from "@/components/OurTeam";
 import { PropertiesContainer } from "@/components/PropertiesContainer";
-import { Services } from "@/components/Services";
 import { TransitionPage } from "@/components/TransitionPage";
-//import dynamic from "next/dynamic";
 
 export default function Home() {
   return (
@@ -16,10 +16,11 @@ export default function Home() {
         <Banner />
         <PropertiesContainer />
         <div className="mx-auto">
-          <Services />
           <About />
         </div>
       </main>
+      <OurTeam />
+      <ContactSection />
       <Footer />
     </>
   );
