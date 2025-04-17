@@ -1,49 +1,118 @@
-import Link from "next/link";
 import {
-  LiaFacebookF,
-  LiaInstagram,
-  LiaLinkedinIn,
-  LiaYoutube,
-} from "react-icons/lia";
-import { dataFooter } from "./Footer.data";
+  IconBrandFacebookFilled,
+  IconBrandInstagram,
+  IconBrandLinkedinFilled,
+  IconBrandYoutubeFilled,
+} from "@tabler/icons-react";
+import Link from "next/link";
+import { ComponentType } from "react";
+
+interface ISocialMediaItem {
+  name: string;
+  logo: ComponentType<{ className?: string }>;
+  link: string;
+}
+
+const socialMedia: ISocialMediaItem[] = [
+  {
+    name: "Youtube",
+    logo: IconBrandYoutubeFilled,
+    link: "https://www.youtube.com/channel/UCbRQo2e8LcOEa9m4H4ZjeTA",
+  },
+  {
+    name: "Instagram",
+    logo: IconBrandInstagram,
+    link: "https://www.instagram.com/nizzipropiedades/",
+  },
+  {
+    name: "Linkedin",
+    logo: IconBrandLinkedinFilled,
+    link: "https://www.linkedin.com/company/nizzi-propiedades-inmobiliaria/",
+  },
+  {
+    name: "Facebook",
+    logo: IconBrandFacebookFilled,
+    link: "https://www.facebook.com/NizziPropiedades/",
+  },
+];
 
 export function Footer() {
   return (
-    <div className="bg-main-client mt-8 px-4 py-8 md:px-36">
-      <div className="grid max-w-(--breakpoint-xl) grid-cols-2 justify-center gap-8 text-white md:grid-cols-[1fr_1fr_1fr__400px]">
-        {dataFooter.map(({ id, links }) => (
-          <div key={id}>
-            {links.map(({ id, name, link }) => (
-              <Link key={id} href={link} className="mb-1 block">
-                {name}
+    <div>
+      <footer className="bg-main-client">
+        <div className="container mx-auto px-6 py-8">
+          <div className="flex flex-col items-center text-center">
+            <a href="#">
+              <img
+                className="h-7 w-auto"
+                src="https://merakiui.com/images/full-logo.svg"
+                alt=""
+              />
+            </a>
+            <div className="-mx-4 mt-6 flex flex-wrap justify-center">
+              <Link
+                href="#header-home"
+                className="mx-4 text-base text-gray-300 transition-colors duration-300 hover:text-white"
+                aria-label="Home"
+              >
+                Home
               </Link>
-            ))}
+
+              <Link
+                href="#about"
+                className="mx-4 text-base text-gray-300 transition-colors duration-300 hover:text-white"
+                aria-label="Sobre nosotros"
+              >
+                Sobre nosotros
+              </Link>
+
+              <a
+                href="#"
+                className="mx-4 text-base text-gray-300 transition-colors duration-300 hover:text-white"
+                aria-label="Propiedades"
+              >
+                Propiedades
+              </a>
+              <a
+                href="https://www.nizzipropiedades.com/escribanos-notarios.php"
+                className="mx-4 text-base text-gray-300 transition-colors duration-300 hover:text-white"
+                aria-label="Notarios"
+                target="_blank"
+              >
+                Notarios
+              </a>
+              <a
+                href="https://www.nizzipropiedades.com/blog-inmobiliario/"
+                className="mx-4 text-base text-gray-300 transition-colors duration-300 hover:text-white"
+                aria-label="Blog"
+                target="_blank"
+              >
+                Blog
+              </a>
+            </div>
           </div>
-        ))}
-        <div className="md:text-right">
-          <h4 className="mb-6 text-xl font-semibold">Nizzi Propiedades</h4>
-          <p>Direccion</p>
-          <p>Mar del Plata, Argentina</p>
-          <div className="mt-5 flex gap-4 md:justify-end">
-            <LiaInstagram
-              className="cursor-pointer text-3xl"
-              href="https://www.instagram.com/nizzi_propiedades/"
-            />
-            <LiaFacebookF
-              className="cursor-pointer text-3xl"
-              href="https://www.facebook.com/NizziPropiedades/"
-            />
-            <LiaYoutube
-              className="cursor-pointer text-3xl"
-              href="https://www.youtube.com/channel/UCbRQo2e8LcOEa9m4H4ZjeTA"
-            />
-            <LiaLinkedinIn
-              className="cursor-pointer text-3xl"
-              href="https://www.linkedin.com/company/nizzi-propiedades-inmobiliaria/"
-            />
+          <hr className="my-6 border-gray-300 md:my-10" />
+          <div className="flex flex-col items-center sm:flex-row sm:justify-between">
+            <p className="text-sm text-gray-300">
+              © Copyright {new Date().getFullYear()}. All Rights Reserved.
+            </p>
+            <div className="-mx-2 mt-3 flex md:mt-0">
+              {socialMedia.map((item, index) => (
+                <a
+                  key={index}
+                  title={item.name}
+                  className="mx-1.5 transform text-white transition-colors duration-300 hover:opacity-75"
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <item.logo className="h-7 w-8" />
+                </a>
+              ))}
+            </div>
           </div>
         </div>
-      </div>
+      </footer>
     </div>
   );
 }
