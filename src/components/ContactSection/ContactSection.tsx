@@ -41,7 +41,7 @@ const socialMedia: ISocialMediaItem[] = [
 
 export function ContactSection() {
   return (
-    <section className="bg-main-bg">
+    <section id="contact" className="bg-main-bg">
       <div className="container mx-auto px-6 py-12">
         <div className="lg:-mx-6 lg:flex lg:items-center">
           {/******************* CONTACT INFO *******************/}
