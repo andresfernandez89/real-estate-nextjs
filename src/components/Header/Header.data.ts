@@ -4,21 +4,21 @@ export const dataHeader: HeaderData[] = [
   {
     id: 1,
     name: "Home",
-    link: "/",
+    link: "/#header-home",
   },
   {
     id: 2,
     name: "Sobre nosotros",
-    link: "#about",
+    link: "/#about",
   },
   {
     id: 3,
     name: "Propiedades",
-    link: "#propierties",
+    link: "/#propierties",
   },
   {
     id: 4,
     name: "Contacto",
-    link: "#contact",
+    link: "/#contact",
   },
 ];

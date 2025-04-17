@@ -42,7 +42,7 @@ export function Footer() {
       <footer className="bg-main-client">
         <div className="container mx-auto px-6 py-8">
           <div className="flex flex-col items-center text-center">
-            <a href="#">
+            <a href="/#header-home">
               <img
                 className="h-7 w-auto"
                 src="https://merakiui.com/images/full-logo.svg"
@@ -51,7 +51,7 @@ export function Footer() {
             </a>
             <div className="-mx-4 mt-6 flex flex-wrap justify-center">
               <Link
-                href="#header-home"
+                href="/#header-home"
                 className="mx-4 text-base text-gray-300 transition-colors duration-300 hover:text-white"
                 aria-label="Home"
               >
@@ -59,7 +59,7 @@ export function Footer() {
               </Link>
 
               <Link
-                href="#about"
+                href="/#about"
                 className="mx-4 text-base text-gray-300 transition-colors duration-300 hover:text-white"
                 aria-label="Sobre nosotros"
               >
@@ -67,7 +67,7 @@ export function Footer() {
               </Link>
 
               <a
-                href="#"
+                href="/#"
                 className="mx-4 text-base text-gray-300 transition-colors duration-300 hover:text-white"
                 aria-label="Propiedades"
               >
