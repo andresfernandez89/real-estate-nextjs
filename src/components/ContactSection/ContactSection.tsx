@@ -25,7 +25,7 @@ const socialMedia: ISocialMediaItem[] = [
   {
     name: "Instagram",
     logo: IconBrandInstagram,
-    link: "https://www.instagram.com/nizzi_propiedades/",
+    link: "https://www.instagram.com/nizzipropiedades/",
   },
   {
     name: "Linkedin",
