@@ -1,9 +1,11 @@
 import Image from "next/image";
-import { Transition } from "../Transition";
 export function About() {
   return (
-    <Transition className="container mx-auto grid gap-4 px-4 py-8 md:grid-cols-2 md:py-44">
-      <div className="mb-7 max-w-xl" id="about">
+    <div
+      className="container mx-auto grid gap-4 px-4 py-8 md:grid-cols-2 md:py-44"
+      id="about"
+    >
+      <div className="mb-7 max-w-xl">
         <h4 className="text-secondary text-center md:text-left">
           Sobre nosotros
         </h4>
@@ -33,6 +35,6 @@ export function About() {
           priority
         />
       </div>
-    </Transition>
+    </div>
   );
 }
