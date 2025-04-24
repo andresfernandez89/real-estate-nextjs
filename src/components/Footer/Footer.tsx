@@ -4,6 +4,7 @@ import {
   IconBrandLinkedinFilled,
   IconBrandYoutubeFilled,
 } from "@tabler/icons-react";
+import Image from "next/image";
 import Link from "next/link";
 import { ComponentType } from "react";
 
@@ -42,13 +43,16 @@ export function Footer() {
       <footer className="bg-main-client">
         <div className="container mx-auto px-6 py-8">
           <div className="flex flex-col items-center text-center">
-            <a href="/#header-home">
-              <img
-                className="h-7 w-auto"
-                src="https://merakiui.com/images/full-logo.svg"
-                alt=""
+            <Link href="/#header-home">
+              <Image
+                src="/assets/logoNizzi.png"
+                alt="Logo"
+                width={200}
+                height={150}
+                className="h-auto max-h-[75] object-cover"
+                priority
               />
-            </a>
+            </Link>
             <div className="-mx-4 mt-6 flex flex-wrap justify-center">
               <Link
                 href="/#header-home"
