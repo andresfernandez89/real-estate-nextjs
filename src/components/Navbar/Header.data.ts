@@ -1,4 +1,8 @@
-import { HeaderData } from "./Header.types";
+export type HeaderData = {
+  id: number;
+  name: string;
+  link: string;
+};
 
 export const dataHeader: HeaderData[] = [
   {
