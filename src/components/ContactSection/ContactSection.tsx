@@ -41,11 +41,14 @@ const socialMedia: ISocialMediaItem[] = [
 
 export function ContactSection() {
   return (
-    <section id="contact" className="bg-main-bg">
-      <div className="container mx-auto px-6 py-12">
-        <div className="lg:-mx-6 lg:flex lg:items-center">
+    <section
+      id="contact"
+      className="bg-main-bg mx-auto my-[88] max-w-(--breakpoint-xl) px-4 md:py-0 lg:pr-12 lg:pl-0 xl:px-0"
+    >
+      <div className="container mx-auto">
+        <div className="lg:flex lg:items-center xl:-mx-6">
           {/******************* CONTACT INFO *******************/}
-          <div className="justify-items-center lg:mx-6 lg:w-1/2">
+          <div className="mb-[88] justify-items-center lg:ml-0 lg:w-1/2">
             <h1 className="w-[328] text-2xl font-semibold lg:text-3xl">
               Contactanos para <br /> más información
             </h1>
@@ -113,8 +116,8 @@ export function ContactSection() {
             </div>
           </div>
           {/******************* FORM *******************/}
-          <div className="mt-8 lg:mx-6 lg:w-1/2">
-            <div className="mx-auto w-full overflow-hidden rounded-lg border-[1px] border-gray-400 p-8 lg:max-w-xl">
+          <div className="md:max-lg:mx-16 lg:w-1/2">
+            <div className="mx-auto w-full overflow-hidden rounded-lg border-[1px] border-gray-400 p-8 lg:mr-12 lg:max-w-xl">
               <FormContact />
             </div>
           </div>

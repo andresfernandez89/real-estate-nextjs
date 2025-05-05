@@ -5,7 +5,7 @@ import { Transition } from "../Transition";
 export async function PropertiesContainer() {
   const properties = await getAllPropertiesFeatured();
   return (
-    <Transition className="container mx-auto px-4 py-8 md:py-32">
+    <Transition className="container mx-auto my-[88] px-4 md:mt-16 lg:px-8 xl:px-0">
       <Properties data={properties} />
       {/* <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
          {dataFilteredHouses.map(

@@ -2,7 +2,7 @@ import Image from "next/image";
 export function About() {
   return (
     <div
-      className="container mx-auto grid gap-4 px-4 py-8 md:grid-cols-2 md:py-44"
+      className="container mx-auto grid gap-4 px-4 md:grid-cols-2 lg:px-8 xl:px-0"
       id="about"
     >
       <div className="mb-7 max-w-xl">

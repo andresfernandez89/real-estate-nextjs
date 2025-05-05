@@ -12,12 +12,10 @@ export default function Home() {
     <>
       <TransitionPage />
       <Header />
-      <main className="mx-auto max-w-(--breakpoint-xl) md:mt-[70px]">
+      <main className="mx-auto mb-[88px] max-w-(--breakpoint-xl) md:mt-[70px]">
         <Banner />
         <PropertiesContainer />
-        <div className="mx-auto">
-          <About />
-        </div>
+        <About />
       </main>
       <OurTeam />
       <ContactSection />

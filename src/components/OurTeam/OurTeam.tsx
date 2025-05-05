@@ -29,8 +29,8 @@ const team = [
 
 export function OurTeam() {
   return (
-    <section className="bg-main-client px-4 py-8 md:py-32">
-      <div className="container mx-auto max-w-(--breakpoint-xl) px-6 py-10">
+    <section className="bg-main-client mx-auto px-4 py-[88] lg:px-8">
+      <div className="container mx-auto max-w-(--breakpoint-xl)">
         <h1 className="text-center text-2xl font-semibold text-white capitalize lg:text-3xl">
           Nuestro equipo
         </h1>
@@ -42,11 +42,11 @@ export function OurTeam() {
           Martilleros y una amplia cartera de clientes satisfechos en la ciudad
           y el país.
         </p>
-        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:gap-x-8 xl:mt-16 xl:grid-cols-2">
+        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:gap-x-12 xl:mt-16 xl:grid-cols-2">
           {team.map((person, index) => (
             <div
               key={index}
-              className="group hover:bg-main-client-opacity transform rounded-xl border-gray-700 px-8 py-8 transition-colors duration-300 hover:border-transparent md:px-12"
+              className="group hover:bg-main-client-opacity transform rounded-xl border-gray-700 px-4 py-8 pr-0 pl-16 transition-colors duration-300 hover:border-transparent sm:px-8 lg:px-12"
             >
               <div className="flex flex-col sm:-mx-4 sm:flex-row">
                 <img

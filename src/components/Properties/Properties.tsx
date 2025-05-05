@@ -16,8 +16,8 @@ export function Properties({ data }: { data: PropertiesProps }) {
   const dataFilteredHouses = data.slice(0, counterHouses);
   const loadMoreHouses = () => setCounterHouses(counterHouses + 4);
   return (
-    <Transition className="container mx-auto px-4 py-8 md:py-32">
-      <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
+    <Transition>
+      <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {dataFilteredHouses.map(
           ({
             reference,
