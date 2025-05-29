@@ -13,6 +13,7 @@ export default function Page() {
   const filteredPage = dataProperties.find(
     (property) => property.id == Number(propertyId),
   );
+  console.log(dataProperties);
   return (
     <>
       <TransitionPage />

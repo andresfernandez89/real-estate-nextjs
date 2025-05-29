@@ -8,7 +8,6 @@ import {
   LiaBedSolid,
   LiaRulerCombinedSolid,
 } from "react-icons/lia";
-import { Transition } from "../Transition";
 import { PropertiesProps } from "./Properties.types";
 
 export function Properties({ data }: { data: PropertiesProps }) {
@@ -16,8 +15,11 @@ export function Properties({ data }: { data: PropertiesProps }) {
   const dataFilteredHouses = data.slice(0, counterHouses);
   const loadMoreHouses = () => setCounterHouses(counterHouses + 4);
   return (
-    <Transition>
-      <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+    <>
+      <div
+        id="propierties"
+        className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+      >
         {dataFilteredHouses.map(
           ({
             reference,
@@ -81,6 +83,6 @@ export function Properties({ data }: { data: PropertiesProps }) {
           </button>
         )}
       </div>
-    </Transition>
+    </>
   );
 }

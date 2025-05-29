@@ -1,4 +1,5 @@
 "use client";
+import { sendContact } from "@/services/sendContact";
 import { useRef } from "react";
 import Swal from "sweetalert2";
 import { IFormParams } from "./FormContact.types";
@@ -18,8 +19,7 @@ export function FormContact() {
         mensaje: formData.get("mensaje") as string,
       };
 
-      //const response = await sendContact(formValues);
-      //console.log(response);
+      await sendContact(formValues);
       Swal.fire({
         position: "center",
         icon: "success",
