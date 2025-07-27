@@ -3,11 +3,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import {
-  LiaBathSolid,
-  LiaBedSolid,
-  LiaRulerCombinedSolid,
-} from "react-icons/lia";
 import { PropertiesProps } from "./Properties.types";
 
 export function Properties({ data }: { data: PropertiesProps }) {
@@ -18,7 +13,7 @@ export function Properties({ data }: { data: PropertiesProps }) {
     <>
       <div
         id="propierties"
-        className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+        className="grid justify-items-center gap-2 sm:grid-cols-3 lg:grid-cols-4"
       >
         {dataFilteredHouses.map(
           ({
@@ -34,16 +29,16 @@ export function Properties({ data }: { data: PropertiesProps }) {
             <Link
               key={reference}
               href={`/properties/${reference}`}
-              className="shadow-light cursor-pointer rounded-xl transition-all duration-300 hover:shadow-xl"
+              className="shadow-light w-[363px] cursor-pointer rounded-xl transition-all duration-300 hover:shadow-xl sm:w-[284px]"
             >
               <div className="relative -z-1">
                 <div className="relative">
                   <Image
                     src={`${thumbnail}`}
                     alt="Location"
-                    width={150}
-                    height={150}
-                    className="h-[200px] max-h-full w-full rounded-t-xl object-cover"
+                    width={284}
+                    height={284}
+                    className="h-[363px] w-[363px] rounded-t-xl object-cover sm:h-[284px] sm:w-[284px]"
                   />
                   <div className="px-3 py-5">
                     <p className="text-secondary">{neighborhood}</p>
@@ -52,19 +47,16 @@ export function Properties({ data }: { data: PropertiesProps }) {
                       {shortDescription ? ` - ${shortDescription}` : ""}
                     </p>
                     <p className="font-semibold">{price}</p>
-                    <div className="text-main-client mt-2 flex-row justify-stretch gap-1 lg:flex">
-                      <div className="bg-secondary-client my-2 flex grow items-center justify-center rounded-md px-2 py-1">
-                        <LiaBedSolid />
-                        <span className="ml-2">{2}</span>
-                      </div>
-                      <div className="bg-secondary-client my-2 flex grow items-center justify-center rounded-md px-2 py-1">
-                        <LiaBathSolid />
-                        <span className="ml-2">{2}</span>
-                      </div>
-                      <div className="bg-secondary-client my-2 flex grow items-center justify-center rounded-md px-2 py-1">
-                        <LiaRulerCombinedSolid />
-                        <span className="ml-2">{50}</span>
-                      </div>
+                    <div className="mt-2 flex-row justify-stretch gap-1 text-sm font-normal lg:flex">
+                      <span>{2} ambs.</span>
+
+                      <span className="pl-2 before:pr-2 before:content-['|']">
+                        {2} baños
+                      </span>
+
+                      <span className="pl-2 before:pr-2 before:content-['|']">
+                        {50} m² totales
+                      </span>
                     </div>
                   </div>
                 </div>
